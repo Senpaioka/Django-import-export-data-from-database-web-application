@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Utils</title>
+</head>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .welcome-container {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .welcome-container h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .welcome-container p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .welcome-container a {
+      text-decoration: none;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .welcome-container a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+
+<body>
+
+<div class="welcome-container">
+    <h1>Welcome to Database Utils</h1>
+    <p>A Django based web application</p>
+    <p>Easily Import or Export data from database</p>
+
+    <a href="{% url 'import' %}">Import Data</a>
+    <a href="{% url 'export' %}">Export Data</a>
+  </div>
+
+</body>
+</html>
